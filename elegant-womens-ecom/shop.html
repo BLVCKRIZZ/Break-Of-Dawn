@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shop — Break Of Dawn</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/witelogo.png" type="image/png">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a href="index.html" class="brand">
+        <div class="logo"><img src="images/witelogo.png" alt="Break Of Dawn logo" class="logo-img"></div>
+        <div class="brand-text">
+          <span class="brand-title">Break Of Dawn</span>
+          <span class="brand-sub">Elegant. Timeless.</span>
+        </div>
+      </a>
+
+      <nav class="main-nav">
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html" class="cart-link">Cart <span id="nav-cart-count-shop" class="cart-count">0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <a href="index.html" class="btn btn-outline back-home-btn" aria-label="Back to home">← Back to Home</a>
+
+  <main class="container">
+    <div class="shop-top">
+      <h1>Shop</h1>
+      <div class="shop-filters">
+        <button onclick="renderProducts()">All</button>
+        <button onclick="renderProducts('Shorts')">Shorts</button>
+        <button onclick="renderProducts('Skirts')">Skirts</button>
+        <button onclick="renderProducts('Tops')">Tops</button>
+        <button onclick="renderProducts('Pants')">Pants</button>
+        <button onclick="renderProducts('Accessories')">Accessories</button>
+      </div>
+    </div>
+
+    <div id="products-grid" class="grid-3 mt-8"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand-small">Break Of Dawn</div>
+        <p class="muted">A curated edit of refined essentials.</p>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/blvckrizz?igsh=cXZ5dGtieWhmYXB3&utm_source=qr" target="_blank" aria-label="Instagram">
+            <img src="instagram.svg" alt="Instagram" style="width:24px;height:24px;">
+          </a>
+          <a href="https://facebook.com/" target="_blank" aria-label="Facebook">
+            <img src="facebook.svg" alt="Facebook" style="width:24px;height:24px;">
+          </a>
+          <a href="https://pinterest.com/" target="_blank" aria-label="Pinterest">
+            <img src="pinterest.svg" alt="Pinterest" style="width:24px;height:24px;">
+          </a>
+        </div>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <a href="shop.html">All</a>
+        <a href="shop.html#Skirts">Skirts</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span id="year2"></span> Break Of Dawn — All rights reserved.</div>
+  </footer>
+
+<style>
+  .product-img img,
+  .prod-img {
+    max-width: 100%;
+    max-height: 320px;
+    object-fit: contain !important;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    display: block;
+    margin: 0 auto;
+  }
+</style>
+<script src="script.js"></script>
+</body>
+</html>

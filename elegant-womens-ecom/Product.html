@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Product — Break Of Dawn</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .product-area img.prod-img,
+    .product-area img {
+      max-width: 100%;
+      max-height: 420px;
+      object-fit: contain !important;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <section class="hero-image" style="position:relative;min-height:320px;background:#f8f8f8;margin-bottom:32px;">
+    <img src="breaklogo.jpg" alt="Break Of Dawn Hero" style="width:100%;height:320px;object-fit:cover;object-position:center;display:block;">
+  </section>
+  <header class="site-header">
+    <div class="container header-row">
+      <a href="index.html" class="brand">
+        <div class="logo"><img src="images/witelogo.png" alt="Break Of Dawn logo" class="logo-img"></div>
+        <div class="brand-text">
+          <span class="brand-title">Break Of Dawn</span>
+          <span class="brand-sub">Elegant. Timeless.</span>
+        </div>
+      </a>
+      <nav class="main-nav">
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html" class="cart-link">Cart <span id="nav-cart-count-product" class="cart-count">0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div id="product-area" class="product-area mt-8">
+      <style>
+        .product-area img.prod-img, .product-area img {
+          max-width: 100%;
+          max-height: 420px;
+          object-fit: contain !important;
+          background: #fff;
+          border-radius: 12px;
+          box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+          display: block;
+          margin: 0 auto;
+        }
+      </style>
+      <!-- Size picker for clothing items -->
+      <form id="size-form" style="margin-bottom:24px;">
+        <label for="size-select" style="font-weight:600;">Select Size:</label>
+        <select id="size-select" name="size" style="margin-left:12px; padding:6px 14px; border-radius:8px; border:1px solid #ccc;">
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+        </select>
+      </form>
+      <!-- ...existing code for product details will render here... -->
+    </div>
+    
+    <section class="container featured" style="margin-top:60px">
+      <h2>You might also like</h2>
+      <div id="you-might-like-grid" class="grid-3"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand-small">Break Of Dawn</div>
+        <p class="muted">A curated edit of refined essentials.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <a href="shop.html">All</a>
+        <a href="shop.html#Skirts">Skirts</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span id="year3"></span> Break Of Dawn — All rights reserved.</div>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>

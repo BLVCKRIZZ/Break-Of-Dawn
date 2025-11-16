@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cart — Break Of Dawn</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/witelogo.png" type="image/png">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a href="index.html" class="brand">
+        <div class="logo"><img src="images/witelogo.png" alt="Break Of Dawn logo" class="logo-img"></div>
+        <div class="brand-text">
+          <span class="brand-title">Break Of Dawn</span>
+          <span class="brand-sub">Elegant. Timeless.</span>
+        </div>
+      </a>
+
+      <nav class="main-nav">
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html" class="cart-link">Cart <span id="nav-cart-count-cart" class="cart-count">0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <a href="index.html" class="btn btn-outline back-home-btn" aria-label="Back to home">← Back to Home</a>
+
+  <main class="container">
+    <h1>Your cart</h1>
+    <div id="cart-area" class="cart-area mt-6"></div>
+    <div id="cart-sidebar" class="cart-sidebar mt-6"></div>
+  </main>
+
+  <!-- Featured Items Section -->
+  <section class="container featured">
+    <h2>You might also like</h2>
+    <div id="featured-grid" class="grid-3"></div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand-small">Break Of Dawn</div>
+        <p class="muted">A curated edit of refined essentials.</p>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/blvckrizz?igsh=cXZ5dGtieWhmYXB3&utm_source=qr" target="_blank" aria-label="Instagram">
+            <img src="instagram.svg" alt="Instagram" style="width:24px;height:24px;">
+          </a>
+          <a href="https://facebook.com/" target="_blank" aria-label="Facebook">
+            <img src="facebook.svg" alt="Facebook" style="width:24px;height:24px;">
+          </a>
+          <a href="https://pinterest.com/" target="_blank" aria-label="Pinterest">
+            <img src="pinterest.svg" alt="Pinterest" style="width:24px;height:24px;">
+          </a>
+        </div>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <a href="shop.html">All</a>
+        <a href="shop.html#Skirts">Skirts</a>
+        <a href="shop.html#Tops">Tops</a>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span id="year4"></span> Break Of Dawn — All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
